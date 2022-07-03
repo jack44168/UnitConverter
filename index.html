@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <meta name="description" content="A simple but powerful Unit Converter">
+    <link rel="icon" href="image/convertio.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="header_1">
+            <p id="header_1_UnitConverter" onclick="index()">UnitConverter<p>
+        </div>
+        <div id="header_2">
+            <p class="header_2_menu" id="header_2_LC" onclick="length()">Length Converter</p>
+            <p class="header_2_menu" id="header_2_WC" onclick="weight()">Weight Converter</p>
+            <p class="header_2_menu" id="header_2_AC" onclick="area()">Area Converter</p>
+            <p class="header_2_menu" id="header_2_BC" onclick="base()">Base Converter</p>
+        </div>
+    </div>
+    <div class="main">
+        <p id="length_block" onclick="length()">Length <br/> Converter</p>
+        <p id="weight_block" onclick="weight()">Weight <br/> Converter</p>
+    </div>
+    <div class="main">
+        <p id="area_block" onclick="area()">Area <br/> Converter</p>
+        <p id="base_block" onclick="base()">Base <br/> Converter</p>
+    </div>
+    <script src="index.js"></script>
+</body>

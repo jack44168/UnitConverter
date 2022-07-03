@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weight Converter</title>
+    <meta name="description" content="A simple but powerful Weight Converter">
+    <link rel="icon" href="../image/convertio.svg" type="image/x-icon">
+    <link rel="stylesheet" href="weight.css">
+</head>
+<body>
+    <div class="header">
+        <div id="header_1">
+            <p id="header_1_UnitConverter" onclick="index()">UnitConverter<p>
+        </div>
+        <div id="header_2">
+            <p class="header_2_menu" id="header_2_LC" onclick="length()">Length Converter</p>
+            <p class="header_2_menu" id="header_2_WC" onclick="weight()">Weight Converter</p>
+            <p class="header_2_menu" id="header_2_AC" onclick="area()">Area Converter</p>
+            <p class="header_2_menu" id="header_2_BC" onclick="base()">Base Converter</p>
+        </div>
+    </div>
+    <p id="type">Weight Converter</p>
+    <div class="main">
+        <div class="choice">
+            <div class="from">
+                <label for="from" class="from" style="margin-bottom:0px; font-size:22px;">From</label>
+                <input style="font-size:24px" type="text" id="input_1" oninput="convert()">
+                <select class="from" id="from" onclick="convert()" multiple>
+                    <option value="mg">Milligram(mg)</option>
+                    <option value="g" selected="selected">Gram(g)</option>
+                    <option value="kg">Kilogram(kg)</option>
+                    <option value="Short Ton">Short Ton</option>
+                    <option value="t">Metric Ton(t)</option>
+                    <option value="oz">Ounce(oz)</option>
+                    <option value="lb">Pound(lb)</option>
+                    <option value="st">Stone(st)</option>
+                    <option value="Long Ton">Long Ton</option>
+                </select>     
+            </div>
+            <div class="to">
+                <label for="to" class="to" style="margin-bottom:0px; font-size:22px;">To</label>
+                <input style="font-size:24px" type="text" id="input_2" readonly >
+                <select class="to" id="to" onclick="convert()" multiple>
+                    <option value="mg">Milligram(mg)</option>
+                    <option value="g">Gram(g)</option>
+                    <option value="kg" selected="selected">Kilogram(kg)</option>
+                    <option value="Short Ton">Short Ton</option>
+                    <option value="t">Metric Ton(t)</option>
+                    <option value="oz">Ounce(oz)</option>
+                    <option value="lb">Pound(lb)</option>
+                    <option value="st">Stone(st)</option>
+                    <option value="Long Ton">Long Ton</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="weight.js"></script>
+</body>

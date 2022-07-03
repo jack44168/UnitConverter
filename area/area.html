@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Area Converter</title>
+    <meta name="description" content="A simple but powerful Area Converter">
+    <link rel="icon" href="../image/convertio.svg" type="image/x-icon">
+    <link rel="stylesheet" href="area.css">
+</head>
+<body>
+    <div class="header">
+        <div id="header_1">
+            <p id="header_1_UnitConverter" onclick="index()">UnitConverter<p>
+        </div>
+        <div id="header_2">
+            <p class="header_2_menu" id="header_2_LC" onclick="length()">Length Converter</p>
+            <p class="header_2_menu" id="header_2_WC" onclick="weight()">Weight Converter</p>
+            <p class="header_2_menu" id="header_2_AC" onclick="area()">Area Converter</p>
+            <p class="header_2_menu" id="header_2_BC" onclick="base()">Base Converter</p>
+        </div>
+    </div>
+    <p id="type">Area Converter</p>
+    <div class="main">
+        <div class="choice">
+            <div class="from">
+                <label for="from" class="from" style="margin-bottom:0px; font-size:22px;">From</label>
+                <input style="font-size:24px" type="text" id="input_1" oninput="convert()">
+                <select class="from" id="from" onclick="convert()" multiple>
+                    <option value="smillimeter" >Square Millimeter</option>
+                    <option value="scentimeter" selected="selected">Square Centimeter</option>
+                    <option value="smeter" >Square Meter</option>
+                    <option value="skilometer">Square Kilometer</option>
+                    <option value="sinch">Square Inch</option>
+                    <option value="sfoot">Square foot</option>
+                    <option value="syard">Square Yard</option>
+                    <option value="smile">Square Mile</option>
+                    <option value="are">Are</option>
+                    <option value="acre">Acre</option>
+                    <option value="hectare">Hectare</option>
+                </select>     
+            </div>
+            <div class="to">
+                <label for="to" class="to" style="margin-bottom:0px; font-size:22px;">To</label>
+                <input style="font-size:24px" type="text" id="input_2" readonly >
+                <select class="to" id="to" onclick="convert()" multiple>
+                    <option value="smillimeter" >Square Millimeter</option>
+                    <option value="scentimeter">Square Centimeter</option>
+                    <option value="smeter" selected="selected">Square Meter</option>
+                    <option value="skilometer">Square Kilometer</option>
+                    <option value="sinch">Square Inch</option>
+                    <option value="sfoot">Square foot</option>
+                    <option value="syard">Square Yard</option>
+                    <option value="smile">Square Mile</option>
+                    <option value="are">Are</option>
+                    <option value="acre">Acre</option>
+                    <option value="hectare">Hectare</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="area.js"></script>
+</body>
