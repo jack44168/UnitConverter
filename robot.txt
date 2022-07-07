@@ -1,0 +1,5 @@
+user-agent:*
+allow:
+crawl-delay:10
+
+sitemap:https://jack44168.github.io/UnitConverter/sitemap.xml
